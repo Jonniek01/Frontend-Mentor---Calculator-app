@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.theme1{
+  /*Backgrounds*/
+  --main-back:hsl(222, 26%, 31%);
+  --toggle-backg-keypad-back: hsl(223, 31%, 20%);
+  --screen-back:hsl(224, 36%, 15%);
+
+  /*keys*/
+  --key-back-alpha:hsl(225, 21%, 49%);
+  --key-shadow-alpha:hsl(224, 28%, 35%);
+  --key-back-betta:hsl(6, 63%, 50%);
+  --key-shadow-betta:hsl(6, 70%, 34%);
+  --key-back-gamma:hsl(30, 25%, 89%);
+  --key-shadow-gamma:hsl(28, 16%, 65%);
+
+  /*Text*/
+  --color-alpha:hsl(221, 14%, 31%);
+  --colo-betta:hsl(0, 0, 100%);
+  --color-gamma:"";
+
+}
+.theme2{
+  /*Backgrounds*/
+  --main-back:hsl(0, 0%, 90%);
+  --toggle-backg-keypad-back: hsl(0, 5%, 81%);
+  --screen-back:hsl(0, 0%, 93%);
+
+  /*keys*/
+  --key-back-alpha:hsl(185, 42%, 37%);
+  --key-shadow-alpha:hsl(185, 58%, 25%);
+  --key-back-betta:hsl(25, 98%, 40%);
+  --key-shadow-betta:hsl(25, 99%, 27%);
+  --key-back-gamma:hsl(45, 7%, 89%);
+  --key-shadow-gamma:hsl(35, 11%, 61%);
+
+  /*Text*/
+  --color-alpha:hsl(60, 10%, 19%);
+  --colo-betta: hsl(0, 0, 100%);
+  --color-gamma:"";
+
+}
+.theme3{
+  /*Backgrounds*/
+  --main-back:hsl(268, 75%, 9%);
+  --toggle-backg-keypad-back: hsl(268, 71%, 12%);
+  --screen-back:hsl(268, 71%, 12%);
+
+  /*keys*/
+  --key-back-alpha:hsl(281, 89%, 26%);
+  --key-shadow-alpha:hsl(224, 28%, 35%);
+  --key-back-betta:hsl(176, 100%, 44%);
+  --key-shadow-betta:hsl(177, 92%, 70%);
+  --key-back-gamma:hsl(268, 47%, 21%);
+  --key-shadow-gamma:hsl(290, 70%, 36%);
+
+  /*Text*/
+  --color-alpha:hsl(52, 100%, 62%);
+  --colo-betta:hsl(198, 20%, 13%);
+  --color-gamma:hsl(0, 0, 100%);
+
+}
+body{
+  width: 100vw;
+  font-size: 32px;
+  font-family: 'League Spartan', sans-serif;
+  height: 100vh;
+  background-color: var(--main-back);
+}
+.container{
+  background-color: var(--main-back);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.calculator{
+  height: 80%;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.head-themes{
+  background-color: rgb(66, 187, 181);
+  width: 96%;
+  height: 10%;
+  margin: 2%;
+  border-radius: 5px;
+
+
+}
+.display{
+  background-color:var(--screen-back);
+  width: 96%;
+  height: 20%;
+  margin: 2%;
+  border-radius: 5px;
+
+
+
+}
+.keyboard{
+  background-color: var(--toggle-backg-keypad-back);
+
+  width: 96%;
+  height: 70%;
+  margin: 2%;
+  border-radius: 5px;
+
+}
