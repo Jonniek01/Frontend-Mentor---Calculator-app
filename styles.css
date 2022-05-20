@@ -13,7 +13,8 @@
   /*keys*/
   --key-back-alpha:hsl(225, 21%, 49%);
   --key-shadow-alpha:hsl(224, 28%, 35%);
-  --key-back-betta:hsl(6, 63%, 50%);
+  --key-back-betta:h        <button class="operator" id="%">%</button>
+  sl(6, 63%, 50%);
   --key-shadow-betta:hsl(6, 70%, 34%);
   --key-back-gamma:hsl(30, 25%, 89%);
   --key-shadow-gamma:hsl(28, 16%, 65%);
@@ -86,8 +87,8 @@ body{
 
 }
 .calculator{
-  height: 80%;
-  width: 33%;
+  height: 75%;
+  width: 27%;
   display: flex;
   flex-direction: column;
   
@@ -111,6 +112,11 @@ body{
   height: 20%;
   margin: 2%;
   border-radius: 5px;
+  color: var(--color-h);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
 
 
 
@@ -122,6 +128,17 @@ body{
   height: 70%;
   margin: 2%;
   border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,13%);
+  gap: 7%;
+  padding: 5%;
+  grid-template-areas: 
+  "seven eight nine del"
+  "four five six plus"
+  "one two three minus"
+  "point zelo slash timez"
+  "reset reset equals equals";
 
 }
 .calc{
@@ -178,3 +195,62 @@ body{
   background-color: brown;
 
 }
+
+/*KEYS*/
+.seven {
+grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+  }
+.nine {
+    grid-area: nine;
+    }
+.del {
+      grid-area: del;
+      }
+.four {
+        grid-area: four;
+        }
+.five {
+     grid-area: five;
+          }
+.six {
+       grid-area: six;
+     }
+.plus {
+  grid-area: plus;
+  }
+.one{
+    grid-area: one;
+    }
+.two{
+  grid-area: two;
+}
+.three{
+  grid-area: three;
+}
+
+.minus {
+      grid-area: minus;
+      }
+  .point {
+        grid-area: point;
+        }
+ .zero {
+      grid-area: zelo;
+      }
+  .slash{
+    grid-area: slash;
+  }
+  .times{
+    grid-area: timez;
+  }
+  .reset{
+    grid-area: reset;
+  }
+.equals{
+  grid-area: equals;
+}
+                       
