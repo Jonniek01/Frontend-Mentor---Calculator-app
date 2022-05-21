@@ -13,8 +13,7 @@
   /*keys*/
   --key-back-alpha:hsl(225, 21%, 49%);
   --key-shadow-alpha:hsl(224, 28%, 35%);
-  --key-back-betta:h        <button class="operator" id="%">%</button>
-  sl(6, 63%, 50%);
+  --key-back-betta:hsl(6, 63%, 50%);
   --key-shadow-betta:hsl(6, 70%, 34%);
   --key-back-gamma:hsl(30, 25%, 89%);
   --key-shadow-gamma:hsl(28, 16%, 65%);
@@ -24,6 +23,7 @@
   --color-alpha:hsl(221, 14%, 31%);
   --colo-betta:hsl(0, 0, 100%);
   --color-gamma:"";
+  --equals:white;
 
 }
 .theme2{
@@ -33,7 +33,7 @@
   --screen-back:hsl(0, 0%, 93%);
 
   /*keys*/
-  --key-back-alpha:hsl(185, 42%, 37%);
+  --key-back-alpha: hsl(185, 42%, 37%);
   --key-shadow-alpha:hsl(185, 58%, 25%);
   --key-back-betta:hsl(25, 98%, 40%);
   --key-shadow-betta:hsl(25, 99%, 27%);
@@ -46,6 +46,8 @@
   --color-alpha:hsl(60, 10%, 19%);
   --colo-betta: hsl(0, 0, 100%);
   --color-gamma:"";
+  --equals:white;
+
 
 }
 .theme3{
@@ -68,6 +70,8 @@
   --color-alpha:hsl(52, 100%, 62%);
   --colo-betta:hsl(198, 20%, 13%);
   --color-gamma:hsl(0, 0, 100%);
+  --equals:hsl(198, 20%, 13%);
+
 
 }
 body{
@@ -130,7 +134,7 @@ body{
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(5,13%);
+  grid-template-rows: repeat(5,15%);
   gap: 7%;
   padding: 5%;
   grid-template-areas: 
@@ -181,6 +185,7 @@ body{
   gap: 2px;
   background-color:var(--toggle-backg-keypad-back);
   border-radius: 20px;
+  padding: 3px;
 
 }
 .theme-radios button{
@@ -196,7 +201,23 @@ body{
 
 }
 
+
 /*KEYS*/
+.keyboard button{
+  border: 0;
+  border-bottom: 3px solid var(  --key-shadow-gamma);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: large;
+  background-color: var( --key-back-gamma);
+  color: var(--color-alpha);
+
+  
+}
+.keyboard button:hover{
+  cursor: pointer;
+}
+                       
 .seven {
 grid-area: seven;
 }
@@ -253,4 +274,27 @@ grid-area: seven;
 .equals{
   grid-area: equals;
 }
-                       
+#\={
+  background-color: var( --key-back-betta);
+  border-bottom:3px solid var( --key-shadow-betta);
+  color: var(--equals );
+
+}
+#backspace,#clear{
+  background-color: var( --key-back-alpha);
+  border-bottom:3px solid var( --key-shadow-alpha);
+  color: white;
+
+
+}
+
+
+/*Media devices*/
+@media only screen and (max-width: 768px){
+  .calculator{
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
