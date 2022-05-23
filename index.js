@@ -10,7 +10,7 @@ const toggle3 = document.getElementById("theme3");
 
 const theme = window.localStorage.getItem("theme");
 if(theme!=""){
-    body.classList.remove("theme1")
+    body.classList.add("theme1")
     body.classList.add(theme);
 }
 
@@ -24,7 +24,6 @@ toggle1.addEventListener("click", () => {
 
     }
     body.classList.add("theme1");
-    currTheme="theme1"
 
 
      window.localStorage.setItem("theme", "theme1");
@@ -39,7 +38,6 @@ toggle2.addEventListener("click", () => {
 
     }
     body.classList.add("theme2");
-    currTheme="theme2"
 
 
 
@@ -55,7 +53,6 @@ toggle3.addEventListener("click", () => {
 
     }
     body.classList.add("theme3");
-    currTheme="theme3"
 
 
      window.localStorage.setItem("theme", "theme3");
